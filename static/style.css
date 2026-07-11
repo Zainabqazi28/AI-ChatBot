@@ -1,0 +1,109 @@
+.sidebar-link:hover{
+background-color: #334155;
+transition: 3.s;
+}
+.sidebar-link:active{
+    background-color: #2563eb;
+}
+.sidebar{
+    background-color: #1e293b;
+}
+.chatbot-header .card-header{
+    color:white;
+    background-color: #1e293b;
+}
+.image{
+    object-fit: cover;
+}
+body{
+    background-color:  #1e293b; 
+}
+.chatbot-header{
+    max-width: 800px;
+    width: 100%;
+}
+
+.history-item{
+    background:#2c3034;
+    color:white;
+    padding:10px;
+    margin-bottom:8px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.history-item:hover{
+    background:#495057;
+}
+.typing-dot{
+    width:8px;
+    height:8px;
+    margin:0 2px;
+    background:#666;
+    border-radius:50%;
+    display:inline-block;
+    animation:typing 1.4s infinite;
+}
+
+.typing-dot:nth-child(2){
+    animation-delay:.2s;
+}
+
+.typing-dot:nth-child(3){
+    animation-delay:.4s;
+}
+
+@keyframes typing{
+    0%,80%,100%{
+        transform:scale(0.5);
+        opacity:.4;
+    }
+
+    40%{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+.dark-mode{
+    /* background:#121212; */
+    color:white;
+}
+
+.dark-mode .card{
+    /* background:#1e1e1e; */
+    color:white;
+}
+
+.dark-mode .card-header{
+    /* background:#2c2c2c; */
+    color:white;
+}
+
+.dark-mode .form-control{
+    /* background:#2c2c2c; */
+    color:white;
+    border-color:#555;
+}
+
+.dark-mode .bg-light{
+    background:#2c2c2c !important; 
+    color:white;
+}
+.dark-mode #messages{
+    background-color: #121212 !important;
+    color: white;
+}
+.dark-mode #messages .text-muted{
+    color: white !important;
+}
+.navbar{
+    background: #1f1f1f;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.sidebar{
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+}
